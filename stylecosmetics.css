@@ -1,0 +1,200 @@
+:root{
+    --primary: #fea116;
+    --light: #f1f8ff;
+    --dark:#0f172b;
+}
+
+body{
+    background-color: #fff;
+}
+
+.banner_image{
+    background-image:url(./image/banner_bg.jpg);
+    height: 100vh;
+    background-size:cover ;
+    overflow: hidden;
+}
+
+.section-title::before{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.jpg{
+    max-width: 100%;
+}
+
+.dropdown-toggle-header::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255emem;
+    content: "";
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+
+.deals_image{
+    background-image:url(./image/deals.jpg);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+
+.on_sale_top{
+    position: relative;
+    margin-top: -140px;
+    z-index:6;
+}
+
+.On_Sale_ima{
+    position: relative;
+    z-index: 2;
+}
+
+
+/*----------hover-----cart iccon------*/
+
+.Featured_image {
+    position:relative;
+    overflow: hidden;
+}
+
+.featured_info {
+    position: absolute;
+    flex-direction: column;
+    top: -23%;
+    left: 35%;
+    width: 100%;
+    height: 100%;
+    background-color:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+    transform: scale(0);
+    transition: all 0.5s ease-out;
+}
+
+.Featured_image:hover .featured_info {
+    opacity:1;
+    transform: scale(1);
+}
+
+
+/*--------*/
+
+.featured_image_mobile {
+    position:relative;
+}
+
+.featured_info_mobile {
+    position: absolute;
+    top: 80%;
+    right: 15%;
+    margin: 0;
+    float: left;
+    align-items: enter;
+    justify-content: center;
+    transform-origin: 0 0;
+    transform: rotate(-360deg);
+}
+
+/*--------hover end cart icon----*/
+
+.instagram_image:hover{
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(179, 179, 179, 0.1);
+}
+
+.blog_image:hover{
+    box-shadow: 0 5px 15px 0 rgba(182, 182, 182, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+}
+
+/*---------hover text------------*/
+
+.featured_texted {
+    position: relative;
+  } 
+  
+  .featured_text {
+    position: absolute;
+    /* margin-top: -100%; */
+    top: 40%;
+    left: 0;
+    margin: 0;
+    float: left;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #000000;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+  }
+
+/*-----hover end --------*/
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--mdb-nav-tabs-link-active-color);
+    border-color: var(--mdb-nav-tabs-link-active-border-color);
+    border: none;
+}
+
+.deals_circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/*--------*/
+
+.slider-selection {
+	background: #f77500 !important;
+}
+.slider-success .slider-selection {
+	background-color: #5cb85c !important;
+}
+.slider-primary .slider-selection {
+	background-color: #428bca !important;
+}
+.slider-info .slider-selection {
+	background-color: #5bc0de !important;
+}
+
+.salam .nav-link {
+    background-color: #f1f2f2 !important;
+}
+
+.salam .nav-link.active {
+    background-color: #ebdebb !important;
+}
+
+.order_color:hover{
+    background-color: #ebdebb;
+}
+
+
+.filter .nav-link {
+    background-color: #ffffff !important;
+}
+
+.filter .nav-link.active {
+    background-color: #ffffff !important;
+}
+
+.text-hover:hover{
+    color: #00c9b7;
+
+}
+.carousel-control-next, .carousel-control-prev {
+    color: #00c9b7 !important;
+}
