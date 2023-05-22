@@ -88,6 +88,10 @@ body{
     transition: all 0.5s ease-out;
 }
 
+.featured_info .i:hover{
+    color: #00c9b7;
+}
+
 .Featured_image:hover .featured_info {
     opacity:1;
     transform: scale(1);
