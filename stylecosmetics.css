@@ -8,12 +8,15 @@ body{
     background-color: #fff;
 }
 
-.banner_image{
-    background-image:url(./image/banner_bg.jpg);
+/* .banner_image{
+    background-image:url(./Home/banner.jpg);
     height: 100vh;
     background-size:cover ;
     overflow: hidden;
-}
+    margin: auto;
+    justify-content:center ;
+    align-items: center;
+} */
 
 .section-title::before{
     position: absolute;

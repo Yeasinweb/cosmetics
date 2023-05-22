@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Toya</title>
+    <title>Cosmetics</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
    
     <link rel="stylesheet" type="text/css" href="animate.css">
 
-    <link rel="stylesheet" type="text/css" href="styletoya.css">
+    <link rel="stylesheet" type="text/css" href="stylecosmetics.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,212 +44,173 @@
   </head>
   <body>
 
-<!-- <section class="header">
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-between align-items-center py-2">
-
-        <div class="max_width" style="max-width: 1600px; margin: auto;">
-          <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid d-flex justify-content-between">
-              <a class="navbar-brand" href="#">
-                <img src="./image/buynoir_logo.png">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <div class="search-container  d-lg-block d-none m-0 p-0">
-                      <form action="/search" method="get">
-                        <input class="search expandright border ps-2 m-0" id="searchright" type="search" name="q" placeholder="Search">
-                        <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
-                      </form>
-                    </div>
-                    <div class="search-container d-lg-none d-block">
-                      <form action="/search" method="get">
-                        <input class="search border p-0 m-0" id="searchleft" type="search" name="q" placeholder="Search">
-                        <label class="button searchbutton" for="searchleft"><span class="mglass">&#9906;</span></label>
-                      </form>
-                    </div>
-                  </li>
-                  <li class="nav-item mx-lg-5">
-                    <a class="nav-link" href="#">
-                      <img src="./image/cat.png">
-                    </a>
-                  </li>
-                  <li class="nav-item dropdown border-0">
-                    <a class="nav-link dropdown-toggle-header border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img src="./image/menu.png">
-                    </a>
-                    <ul class="dropdown-menu" style="">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-      </div>
-
-    </div>
-</section> -->
-
-<section class="header">
+<section class="header d-none d-lg-block">
   <div class="container-fluid">
-    <div class="row d-flex justify-content-between align-items-center py-2">
+    <div class="row align-items-center">
+      <div class="col-lg-4 col-md-4 col-sm-12 ">
+        <div class="row">
+          <div class="col-3" style="background-color: #ff66cc; height: 60px;"></div>
+          <div class="col-9">
+            <nav class="navbar navbar-expand-lg shadow-none">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+        <div class="header-logo">
+          <img src="./Home/buynoir-header.png">
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="search-icon">
+          <div class="row">
+            <div class="col-7">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+            <div class="col-5">
+              <div class="font-icon mt-1">
+                <i class='fas fa-heart '></i>
+                <i class='fas fa-cart-arrow-down ms-4'></i>
+                <i class='	fas fa-user-alt ms-4'></i>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
 
-      <div class="max_width" style="max-width: 1600px; margin: auto;">
-        <nav class="navbar navbar-expand-lg bg-light shadow-0">
+<section class="header-mobile d-lg-none">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="./image/buynoir_logo.png"></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span><img src="./image/menu.png"></span>
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class='fas fa-heart me-md-5 me-2' style='font-size:14px'></i>
+              <i class='fas fa-cart-arrow-down me-md-5 me-2' style='font-size:14px'></i>
+              <i class='	fas fa-user-alt me-md-5 me-2' style='font-size:14px'></i>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto  mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="shop_page.html">Shop</a>
+                  <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Pages
+                    Services
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
-                    <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
-                    <li><a class="dropdown-item" href="login.html">Login</a></li>
-                    <li><a class="dropdown-item" href="Register.html">Signup</a></li>
-                    <li><a class="dropdown-item" href="my_account.html">User Account</a></li>
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link">Interior Design</a>
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
                 </li>
               </ul>
-              <div class="cart_show">
-                <a href="mini_cart.html"><img class="me-5 d-none d-lg-block" src="./image/cat.png"></a>
-              </div>
-              
-              <form class="d-flex" role="search">
-                <input class="form-control me-2 d-none d-lg-block" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success d-none d-lg-block" type="submit" style="border-color: #00c9b7; color: #00c9b7;">Search</button>
-              </form>
-            </div>
-          </div>
-
-        </nav>
-
-        <div class="container-fluid">
-          <div class="row justify-content-between d-lg-none mt-3">
-            <div class="col-2"> <img src="./image/cat.png"> </div>
-            <div class="col-10 col-md-8">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit" style="border-color: #00c9b7; color: #00c9b7;">Search</button>
+                <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
             </div>
           </div>
-        </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-
-<section class="banner banner_image d-flex justify-content-center align-items-center">
-  <div class="container-fluid ">
-
-    <div class="withbanner" style="max-width: 1600px; margin: auto;">
-      <div class="row d-flex justify-content-center align-items-center">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button  style="background-color: rgb(194, 172, 142);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active d-none d-lg-block" aria-current="true" aria-label="Slide 1"></button>
-            <button class="d-none d-lg-block" style="background-color: #00c9b7;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button class="d-none d-lg-block" style="background-color: rgb(0, 0, 0);" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              
-              <div class="row d-flex justify-content-center align-items-center">
-
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 d-none d-lg-block d-md-block">
-                  <img class="img-fluid" src="./image/banner_chair_2.png">
-                </div>
-          
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <div class="line" style="width: 70px; height: 5px; background-color: #00c9b7;"> </div>
-        
-                  <h5 class="pt-4"> Offer Today</h5>
-                  <h1 class="display-3"><strong>Furniture Collection<br> Sale 30%</strong></h1>
-                  <p class="mt-4">Etiam scelerisque magna quis sem euismod mattis. Integer placerat <br>
-                    quam sed congue congue. Quisque tincidunt nisl ante. </p>
-                    <button type="button" class="btn btn-primary border-0 px-3 py-2 mt-4" style="background-color: #00c9b7;">Shop Now</button>
-                </div>
-          
-              </div>
-
-            </div>
-            <div class="carousel-item">
-              
-              <div class="row d-flex justify-content-center align-items-center">
-
-                <div class="col-lg-6 col-md-6">
-                  <img src="./image/banner_chair.png">
-                </div>
-          
-                <div class="col-lg-6 col-md-6 ">
-                  <div class="line" style="width: 70px; height: 5px; background-color: #00c9b7;"> </div>
-        
-                  <h5 class="pt-4"> Offer Today</h5>
-                  <h1 class="display-3"><strong>Furniture Collection<br> Sale 30%</strong></h1>
-                  <p class="mt-4">Etiam scelerisque magna quis sem euismod mattis. Integer placerat <br>
-                    quam sed congue congue. Quisque tincidunt nisl ante. </p>
-                    <button type="button" class="btn btn-primary border-0 px-3 py-2 mt-4" style="background-color: #00c9b7;">Shop Now</button>
-                </div>
-          
-              </div>
-
-            </div>
-            <div class="carousel-item">
-              
-              <div class="row d-flex justify-content-center align-items-center">
-
-                <div class="col-lg-6 col-md-6">
-                  <img src="./image/banner_chair_3.png">
-                </div>
-          
-                <div class="col-lg-6 col-md-6 ">
-                  <div class="line" style="width: 70px; height: 5px; background-color: #00c9b7;"> </div>
-        
-                  <h5 class="pt-4"> Offer Today</h5>
-                  <h1 class="display-3"><strong>Furniture Collection<br> Sale 30%</strong></h1>
-                  <p class="mt-4">Etiam scelerisque magna quis sem euismod mattis. Integer placerat <br>
-                    quam sed congue congue. Quisque tincidunt nisl ante. </p>
-                    <button type="button" class="btn btn-primary border-0 px-3 py-2 mt-4" style="background-color: #00c9b7;">Shop Now</button>
-                </div>
-          
-              </div>
-              
-            </div>
-          </div>
-        </div>
-  
+        </nav>
       </div>
     </div>
-
+    
   </div>
-
 </section>
+
+<section class="banner">
+  <div class="container-fluid ">
+    <div class="row mt-4">
+      <div class="12">
+        <img class="img-fluid" src="./Home/banner.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="day-cream m-0 p-0 mt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 text-center">
+        <div class="day-crems py-5 mt-5" style="background-color: #fcecf7;">
+          <div class="image-dream">
+            <img class="ing-fluid py-5" src="./Home/Day-Cream.png">
+          </div>
+          <div class="image-dream">
+            <button type="button" class="btn btn-outline-dark">Day Cream</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <di class="row">
+          <div class="col-6">
+            <div class="row">
+                gdgdfg
+            </div>
+            <div class="row">
+              gdgdfg
+            </div>
+          </div>
+          <div class="col-6">
+            ffdf
+          </div>
+        </di>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="Featured Products mt-5">
   <div class="container-fluid">
@@ -1767,11 +1728,6 @@
 
         </div>
 
-          </div>
-
-
-        </div>
-
 </section>
 
 <section class="Special Products mt-5">
@@ -2704,9 +2660,6 @@
     </div>
   </div>
 </section>
-
-
-<!-- <section class="Our Latest Blog m-0 p-0 mt-5">
   <div class="container-fluid">
     <div class="row d-flex justify-content-between">
       <div class="col-12 d-flex mt-5 m-lg-0 m-md-0 p-lg-0 p-md-0">
@@ -2770,7 +2723,6 @@
     </div>
 
 </section> -->
-
 
 <section class="Our Brand Logo m-0 p-0 mt-5">
   <div class="container-fluid">
