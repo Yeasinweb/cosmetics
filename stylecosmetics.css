@@ -72,13 +72,13 @@ body{
 
 .featured_info {
     position: absolute;
-    flex-direction: column;
     top: -23%;
     left: 35%;
     width: 100%;
     height: 100%;
     background-color:none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0px;
@@ -88,9 +88,9 @@ body{
     transition: all 0.5s ease-out;
 }
 
-.featured_info .fa-eye:hover{
+/* .featured_info .fa-eye:hover{
     color:red;
-}
+} */
 
 .Featured_image:hover .featured_info {
     opacity:1;
@@ -215,7 +215,16 @@ body{
     justify-content: center;
     display: block;
 }
-.fa-heart{
+/*---------font icon hover -------*/
+
+.featured_info .hover_design {
+    transition: 0.3s;
+}
+.featured_info .hover_design:hover {
+    color: #ff66cc !important;
+}
+
+/* .fa-heart{
     transition: 0.3s;
 }
 
@@ -239,13 +248,14 @@ body{
     color: #ff66cc !important;
 }
 
-.fa-shopping-car{
+.fa-shopping-cart{
     transition: 0.3s;
 }
 
-.fa-shopping-car:hover{
+.fa-shopping-cart:hover{
     color: #ff66cc !important;
-}
+} */
+/*---------font icon hover end -------*/
 
 /*------------------footer--------------*/
 .buynoir{
@@ -271,3 +281,5 @@ body{
  background-color: #ff66cc;
  color: white !important;
 }
+
+/*------------------footer end-------------*/
