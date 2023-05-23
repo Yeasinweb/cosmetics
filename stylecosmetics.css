@@ -246,3 +246,28 @@ body{
 .fa-shopping-car:hover{
     color: #ff66cc !important;
 }
+
+
+.buynoir{
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.buynoir .fa{
+    border: 1px solid red;
+    height: 35px;
+    width: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.buynoir .fa:hover{
+ background-color: #ff66cc;
+ color: white !important;
+}
