@@ -205,3 +205,13 @@ body{
 .carousel-control-next, .carousel-control-prev {
     color: #00c9b7 !important;
 }
+
+.limit-image{
+    background-image:url(./Home/limit-bg.jpg);
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
