@@ -215,3 +215,34 @@ body{
     justify-content: center;
     display: block;
 }
+.fa-heart{
+    transition: 0.3s;
+}
+
+.fa-heart:hover{
+    color: #ff66cc !important;
+}
+
+.fa-eye{
+    transition: 0.3s;
+}
+
+.fa-eye:hover{
+    color: #ff66cc !important;
+}
+
+.fa-signal{
+    transition: 0.3s;
+}
+
+.fa-signal:hover{
+    color: #ff66cc !important;
+}
+
+.fa-shopping-car{
+    transition: 0.3s;
+}
+
+.fa-shopping-car:hover{
+    color: #ff66cc !important;
+}
