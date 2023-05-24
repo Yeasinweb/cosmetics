@@ -283,6 +283,11 @@ body{
 }
 
 /*------------------footer end-------------*/
+
+.cta-info .p-text{
+    display: flex;
+}
+
 .cta-info .cta-icon{
     background-color: #ff66cc;
     height: 30px;
@@ -292,5 +297,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     border-radius: 50%;
 }
