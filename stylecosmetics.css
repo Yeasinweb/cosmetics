@@ -211,6 +211,8 @@ body{
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 100px;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     display: block;
@@ -299,4 +301,16 @@ body{
     justify-content: center;
     flex-direction: row;
     border-radius: 50%;
+}
+/*--------inner page start-------*/
+
+.inner-banner{
+    background-image: url(./Home/inner_page_banner.jpg);
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
 }
