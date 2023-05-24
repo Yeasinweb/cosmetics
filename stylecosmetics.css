@@ -283,3 +283,9 @@ body{
 }
 
 /*------------------footer end-------------*/
+.cta-info .cta-icon{
+    background-color: #000000;
+    height: 30px;
+    width: 30px;
+    color: #000000 !important;
+}
