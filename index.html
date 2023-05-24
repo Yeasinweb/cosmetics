@@ -85,7 +85,7 @@
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12">
         <div class="search-icon">
-          <div class="row">
+          <div class="row align-items-center d-flex">
             <div class="col-7">
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -96,7 +96,21 @@
               <div class="font-icon mt-1">
                 <i class='fas fa-heart '></i>
                 <i class='fas fa-cart-arrow-down ms-4'></i>
-                <i class='	fas fa-user-alt ms-4'></i>
+                <!-- <i class='fas fa-user-alt'></i> -->
+
+                <div class="btn-group shadow-none">
+                  <button type="button" class="border-0 ms-4" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class='fas fa-user-alt'></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                
               </div>
               
             </div>
