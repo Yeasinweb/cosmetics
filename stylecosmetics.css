@@ -6,6 +6,8 @@
 
 body{
     background-color: #fff;
+    margin: 0px;
+    padding: 0px;
 }
 
 /* .banner_image{
@@ -41,14 +43,6 @@ body{
     border-right: 0.3em solid transparent;
     border-bottom: 0;
     border-left: 0.3em solid transparent;
-}
-
-
-.deals_image{
-    background-image:url(./image/deals.jpg);
-    background-repeat: no-repeat;
-    padding-top: 80px;
-    padding-bottom: 150px;
 }
 
 .on_sale_top{
@@ -215,8 +209,9 @@ body{
     background-size: cover;
     align-items: center;
     justify-content: center;
-    display: block;
+    overflow: hidden;
 }
+
 /*---------font icon hover -------*/
 
 .featured_info .hover_design {
@@ -313,4 +308,5 @@ body{
     justify-content: center;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
