@@ -310,3 +310,14 @@ body{
     background-size: cover;
     overflow: hidden;
 }
+
+label + label {
+    padding-left: 1em;
+    opacity: 0.1;
+    visibility: visible;
+    transition: 0.5s;
+}
+:checked + label ~ label {
+    opacity: 1;
+    visibility: visible;
+}

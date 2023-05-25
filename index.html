@@ -31,6 +31,9 @@
       <!-- MDB -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
 
+      <!------for cta button------>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
   </head>
   <body>
 
@@ -3873,14 +3876,19 @@
             </div>
             <div class="col-5">
               <div class="mb-3">
-                <button type="submit" class="btn btn-primary px-4 py-2" style="background-color: #ff66cc;">Submit  <i class='fas fa-long-arrow-alt-right'></i></button>
+                <input class="btn btn-primary px-4 py-2" style="background-color: #ff66cc;" id="submitbtn" disabled="disabled" name="Submit" type="submit" value="Submit" />
+                <!-- <button type="submit" class="btn btn-primary px-4 py-2" style="background-color: #ff66cc;">Submit  <i class='fas fa-long-arrow-alt-right'></i></button> -->
               </div>
             </div>
             <div class="col-7">
               <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">I agree that my data is collected and stored.</label>
+                <input id="accept" name="accept" type="checkbox" value="y"/>I agree that my data is collected and stored.<br>
+                <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">I agree that my data is collected and stored.</label> -->
               </div>
+
+             
+
             </div>
           </div>
         </div>
@@ -4024,6 +4032,16 @@
     <script src="./js/wow.min.js"></script>
 
     <script src="./js/custom.js"></script>
+
+    <script>
+      $('#accept').click(function() {
+        if ($('#submitbtn').is(':disabled')) {
+            $('#submitbtn').removeAttr('disabled');
+          } else {
+            $('#submitbtn').attr('disabled', 'disabled');
+          }
+      });
+    </script>
 
   </body>
 </html>
