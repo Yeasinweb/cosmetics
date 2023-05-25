@@ -45,19 +45,9 @@ body{
     border-left: 0.3em solid transparent;
 }
 
-.on_sale_top{
-    position: relative;
-    margin-top: -140px;
-    z-index:6;
-}
-
-.On_Sale_ima{
-    position: relative;
-    z-index: 2;
-}
 
 
-/*----------hover-----cart iccon------*/
+/*----------hover-----cart icon------*/
 
 .Featured_image {
     position:relative;
