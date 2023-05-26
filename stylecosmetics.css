@@ -302,6 +302,21 @@ body{
     overflow: hidden;
 }
 
+.reason{
+    background-image: url(./Home/Reasons.jpg);
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+
+/*------cta check ------*/
+
 label + label {
     padding-left: 1em;
     opacity: 0.1;
