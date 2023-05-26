@@ -317,6 +317,31 @@ body{
 
 /*------cta check ------*/
 
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-39%);
+    z-index: 1; /* Ensure the buttons appear above the carousel content */
+    margin-top: -20px; /* Adjust the vertical positioning of the buttons if needed */
+  }
+  
+  .carousel-control-prev {
+    left: -20px; /* Move 20px to the left */
+  }
+  
+  .carousel-control-next {
+    right: -20px; /* Move 20px to the right */
+  }
+  
+  
+/*------cta check ------*/
+/*------cta check ------*/
+
 label + label {
     padding-left: 1em;
     opacity: 0.1;
