@@ -185,26 +185,56 @@
   <div class="container-fluid ">
     <div class="row mt-4">
       <div class="12 text-center">
-        <p>Home &nbsp; &nbsp; / &nbsp; &nbsp; Page not found</p>
+        <p>Home &nbsp; &nbsp; / &nbsp; &nbsp; Login</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="404-page py-5">
+<section class="404-page">
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center py-5">
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="text-404">
-                    <h2>Page not found</h2>
-                    <p class="py-4">Quisque posuere, enim vitae semper sodales, lacus magna posuere nibh, at vestibulum felis metus id justo. Aliquam nec lectus eu nisl luctus tincidunt. </p>
-                    <a class="btn btn-primary px-5 py-3" href="#" role="button" style="background-color: #ff66cc;">Back</a>
+            <div class="col-lg-8 col-md-12 col-12">
+                <div class="gray-color px-5 py-3" style="background-color: #f1f2f2;">
+                    <div class="text-404">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active px-lg-5 px-md-5" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Login</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link px-lg-5 px-md-5" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Create Account</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                                <form>
+                                    <div class="mb-3">
+                                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                  </form>
+                                  <div class="d-grid mb-5">
+                                    <button class="btn btn-primary" type="submit" style="background-color: #ff66cc;">Sign In</button>
+                                  </div>
+                                  <div class="forgot text-center">
+                                    <a href="#"><p>Forgot your password?</p> </a>
+                                    <div class="social py-3">
+                                        <a href="#"> <img src="./Home/gmail_l.png"> </a>
+                                        <a href="#"> <img class="ms-2" src="./Home/facebook_l.png"> </a>
+                                        <a href="#"> <img class="ms-2" src="./Home/linkedin_l.png"> </a>
+                                        <a href="#"> <img class="ms-2" src="./Home/twitter_l.png"> </a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                          </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="text-404">
-                    <img class="img-fluid" src="./Home/404_image.jpg">
-                </div>
+                
             </div>
         </div>
     </div>

@@ -106,6 +106,7 @@ body{
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(179, 179, 179, 0.1);
 }
 
+
 .blog_image:hover{
     box-shadow: 0 5px 15px 0 rgba(182, 182, 182, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
 }
@@ -310,4 +311,9 @@ label + label {
 :checked + label ~ label {
     opacity: 1;
     visibility: visible;
+}
+
+/*-----tab--------*/
+.text-404 .nav-pills .nav-link.active{
+    background-color: #f1f2f2;
 }
