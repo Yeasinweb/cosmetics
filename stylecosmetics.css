@@ -362,3 +362,8 @@ ul#pills-tab {
     display: flex;
     justify-content: space-between;
 }
+
+button#home-tab {
+    background-color:#ff66cc;
+    color: #ffffff;
+}
