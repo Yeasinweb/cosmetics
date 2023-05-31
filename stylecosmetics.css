@@ -358,3 +358,7 @@ label + label {
     background-color: #f1f2f2;
 }
 
+ul#pills-tab {
+    display: flex;
+    justify-content: space-between;
+}
