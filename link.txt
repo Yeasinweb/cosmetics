@@ -1,1 +1,5 @@
 https://www.w3resource.com/jquery-exercises/part1/jquery-practical-exercise-4.php (enable / disable button code)
+
+Product Gallery With Image Zoom Example
+
+https://www.jqueryscript.net/gallery/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom.html
