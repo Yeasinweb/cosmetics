@@ -256,7 +256,7 @@
         </div>
 
         <div class="row mt-5 mb-5">
-            <div class="col-lg-6 col-md-6 col-12">
+            <div class="col-lg-6 col-md-12 col-12">
                 <div class="Shiping" style="background-color: #ff66cc; color: white;">
                     <p class="p-2">Shiping Information </p>
                 </div>
@@ -310,7 +310,7 @@
                 
             </div>
 
-            <div class="col-lg-6 col-md-6 col-12">
+            <div class="col-lg-6 col-md-12 col-12">
                 <div class="your-order p-4" style="background-color: #eeeeef;">
                     <div class="table-responsive">
                         <table class="table">
@@ -355,48 +355,44 @@
                               </tr>
 
                               <tr>
-                                <th scope="row" colspan="2"><p>Select Shipping Method</p>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1"> Flat rate: $50.00 </label>
-                                    </div>
+                                <th scope="row" colspan="4">
+                                  <p>Select Shipping Method</p>
+                                  <div class="oneline d-lg-flex d-md-flex">
+                                    <div class="form-check mb-3">
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                      <label class="form-check-label" for="flexRadioDefault1"> Flat rate: $50.00 </label>
+                                  </div>
+                                  <div class="form-check ms-lg-5 ms-md-5 mb-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2"> Free Shipping: $0.00 </label>
+                                  </div>
+                                  </div>
                                 </th>
-                                <td colspan="2"><p><br></p>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                                        <label class="form-check-label" for="flexRadioDefault2"> Free Shipping: $0.00 </label>
-                                    </div>
-                                </td>
-                                <!-- <td></td> -->
-                                <!-- <td><p></p></td> -->
                               </tr>
 
                               <tr>
                                 <th scope="row" colspan="3"><h6>Total</h6></th>
-                                <!-- <td><p></p></td>
-                                <td></td> -->
                                 <td><p> <strong> $207.00</strong> </p></td>
                               </tr>
 
                               <tr>
-                                <th scope="row" colspan="1" class="bg-primar"><p>Select Payment Method</p>
-                                    <div class="form-check">
+                                <th scope="row" colspan="4" class="bg-primar">
+                                  <p>Select Payment Method</p>
+                                    <div class="formcheck d-lg-flex d-md-flex">
+                                      <div class="form-check mb-3">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
                                         <label class="form-check-label" for="flexRadioDefault3"> Stripe </label>
                                     </div>
+                                      <div class="form-check mb-3 ms-lg-5 ms-md-5">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                          <label class="form-check-label" for="flexRadioDefault4"> Cash On Delivery </label>
+                                      </div>
+                                      <div class="form-check ms-lg-5 ms-md-5 mb-3">
+                                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                                          <label class="form-check-label" for="flexRadioDefault5"> Money Transfer </label>
+                                      </div>
+                                  </div>
                                 </th>
-                                <td colspan="3" class="bg-primar"> <p></p><br>
-                                    <div class="formcheck d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                            <label class="form-check-label" for="flexRadioDefault4"> Cash On Delivery </label>
-                                        </div>
-                                        <div class="form-check ms-5">
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                                            <label class="form-check-label" for="flexRadioDefault5"> Money Transfer </label>
-                                        </div>
-                                    </div>
-                                </td>
                               </tr>
 
                               <tr>
@@ -405,9 +401,6 @@
                                         <button class="btn" type="button" style="background-color: #ff66cc; color: white;">Place Order</button>
                                       </div>
                                 </th>
-                                <!-- <td><p>Rose Water Facial Toner   X 1</p></td>
-                                <td></td>
-                                <td><p>$69.00</p></td> -->
                               </tr>
 
                             </tbody>
