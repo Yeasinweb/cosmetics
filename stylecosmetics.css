@@ -366,3 +366,18 @@ ul#pills-tab {
   background-color: #fff;
   border: 0.125rem solid #ff66cc !important;
 }
+
+/* .banner{
+    z-index: 1;
+    content: ();
+    position: absolute;
+} */
+.updown{
+    position: absolute;
+  top: 265px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
