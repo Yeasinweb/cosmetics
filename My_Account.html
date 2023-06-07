@@ -31,6 +31,10 @@
       <!-- MDB -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
 
+      <!----Dropzone-->
+      <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css"/>
+      <!----Dropzone-->
   </head>
   <body>
 
@@ -233,7 +237,9 @@
                         <div class="col-lg-5 col-md-4 col-12 text-center">
                             <div class="mixed">
                                 <div class="image">
+                                  <div class="my-dropzone">
                                     <img class="img-fluid" src="./Home/my-account.png">
+                                  </div>
                                 </div>
                                 <!-- <div class="camera mt-5 me-5">
                                     <img src="./Home/camera.png">
@@ -445,6 +451,11 @@
     <script src="./js/wow.min.js"></script>
 
     <script src="./js/custom.js"></script>
+
+    <script>
+      // Dropzone has been added as a global variable.
+      const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
+    </script>
 
   </body>
 </html>
