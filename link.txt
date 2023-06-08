@@ -3,3 +3,13 @@ https://www.w3resource.com/jquery-exercises/part1/jquery-practical-exercise-4.ph
 Product Gallery With Image Zoom Example
 
 https://www.jqueryscript.net/gallery/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom.html
+
+adding a cart widget in bootstrap 5
+
+https://www.codehim.com (Links)
+
+https://www.codehim.com/demo/single-page-shopping-cart-template/
+
+https://www.codehim.com/collections/javascript-shopping-cart-examples-with-demo/
+
+https://www.jqueryscript.net/demo/Simple-Shopping-Cart-Plugin-With-jQuery-Bootstrap-mycart/
