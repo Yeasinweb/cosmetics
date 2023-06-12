@@ -13,3 +13,7 @@ https://www.codehim.com/demo/single-page-shopping-cart-template/
 https://www.codehim.com/collections/javascript-shopping-cart-examples-with-demo/
 
 https://www.jqueryscript.net/demo/Simple-Shopping-Cart-Plugin-With-jQuery-Bootstrap-mycart/
+
+Date and time (MDB)
+
+https://mdbootstrap.com/docs/standard/forms/datetimepicker/
