@@ -234,21 +234,20 @@
                 <div class="tab-pane fade show active" id="pills-Profile" role="tabpanel" aria-labelledby="pills-Profile-tab" tabindex="0">
                     <div class="row">
                         <div class="col-lg-5 col-md-4 col-12 text-center">
-                            <div class="mixed">
-                                <div class="image">
-                                  <div class="my-dropzone">
-                                    <img class="img-fluid" src="./Home/my-account.png">
-                                  </div>
-                                </div>
+                          <div class="" id="my-dropzone">
+                            <img class="img-fluid" src="./Home/my-account.png">
+                          </div>
+                                <!-- <div class="image "> -->
+                                  <!-- <div class="my-dropzone"> -->
+                                  <!-- </div> -->
+                                <!-- </div> -->
                                 <!-- <div class="camera mt-5 me-5">
                                     <img src="./Home/camera.png">
                                 </div> -->
-                            </div>
-                            <div class="text mt-3">
-                                <h5>Fakhrul Islam</h5>
-                                <p>Software Engineer</p>
-                            </div>
-                            
+                          <div class="text mt-3">
+                              <h5>Fakhrul Islam</h5>
+                              <p>Software Engineer</p>
+                          </div>
                         </div>
                         <div class="col-lg-7 col-md-8 col-12">
                             <h4>Account Information</h4>
@@ -307,21 +306,20 @@
                 <div class="tab-pane fade" id="pills-Address" role="tabpanel" aria-labelledby="pills-Address-tab" tabindex="0">
                   <div class="row">
                     <div class="col-lg-5 col-md-4 col-12 text-center">
-                        <div class="mixed">
-                            <div class="image">
-                              <div class="my-dropzone">
-                                <img class="img-fluid" src="./Home/my-account.png">
-                              </div>
-                            </div>
+                      <div class="" id="my-dropzone">
+                        <img class="img-fluid" src="./Home/my-account.png">
+                      </div>
+                            <!-- <div class="image "> -->
+                              <!-- <div class="my-dropzone"> -->
+                              <!-- </div> -->
+                            <!-- </div> -->
                             <!-- <div class="camera mt-5 me-5">
                                 <img src="./Home/camera.png">
                             </div> -->
-                        </div>
-                        <div class="text mt-3">
-                            <h5>Fakhrul Islam</h5>
-                            <p>Software Engineer</p>
-                        </div>
-                        
+                      <div class="text mt-3">
+                          <h5>Fakhrul Islam</h5>
+                          <p>Software Engineer</p>
+                      </div>
                     </div>
                     <div class="col-lg-7 col-md-8 col-12">
                       <div class="row">
@@ -360,7 +358,7 @@
                       </div>
                       <input class="btn btn-primary" type="submit" value="Save Change" style="background-color: #ff66cc;">
                   </div>
-                </div>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="pills-Reviews" role="tabpanel" aria-labelledby="pills-Reviews-tab" tabindex="0">
                   <div class="table-responsive">
@@ -1075,8 +1073,47 @@
     <script src="./js/custom.js"></script>
 
     <script>
+          document.getElementById('my-dropzone').addEventListener('click', function() {
+        var inputFile = document.createElement('input');
+        inputFile.type = 'file';
+        inputFile.accept = 'image/*';
+
+        // Trigger click event on the input element
+        inputFile.click();
+
+        // Handle file selection
+        inputFile.addEventListener('change', function(event) {
+          var file = event.target.files[0];
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+            var imageSrc = e.target.result;
+
+            // Update image source
+            var imageElement = document.querySelector('#my-dropzone img');
+            imageElement.src = imageSrc;
+
+            // Upload image to ./Home/
+            var formData = new FormData();
+            formData.append('image', file);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', './Home/upload.php', true);
+            xhr.onload = function() {
+              if (xhr.status === 200) {
+                console.log('Image uploaded successfully!');
+              } else {
+                console.error('Image upload failed. Status:', xhr.status);
+              }
+            };
+            xhr.send(formData);
+          };
+
+          reader.readAsDataURL(file);
+        });
+      });
       // Dropzone has been added as a global variable.
-      const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
+      // const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
     </script>
 
   </body>
