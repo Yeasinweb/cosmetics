@@ -307,8 +307,8 @@
                 <div class="tab-pane fade" id="pills-Address" role="tabpanel" aria-labelledby="pills-Address-tab" tabindex="0">
                   <div class="row">
                     <div class="col-lg-5 col-md-4 col-12 text-center">
-                      <div class="" id="my-dropzone">
-                        <img class="img-fluid" src="./Home/my-account.png">
+                      <div class="" id="my-dropzone2">
+                        <img class="img-fluid rounded-circle" src="./Home/my-account.png">
                       </div>
                             <!-- <div class="image "> -->
                               <!-- <div class="my-dropzone"> -->
@@ -1075,7 +1075,15 @@
     <script src="./js/custom.js"></script>
 
     <script>
-          document.getElementById('my-dropzone').addEventListener('click', function() {
+      document.getElementById('my-dropzone').addEventListener('click', function(event) {
+        handleDropzoneClick(event, 'my-dropzone');
+      });
+
+      document.getElementById('my-dropzone2').addEventListener('click', function(event) {
+        handleDropzoneClick(event, 'my-dropzone2');
+      });
+
+      function handleDropzoneClick(event, dropzoneId) {
         var inputFile = document.createElement('input');
         inputFile.type = 'file';
         inputFile.accept = 'image/*';
@@ -1091,8 +1099,8 @@
           reader.onload = function(e) {
             var imageSrc = e.target.result;
 
-            // Update image source
-            var imageElement = document.querySelector('#my-dropzone img');
+            // Update image source for the specific dropzone
+            var imageElement = document.querySelector('#' + dropzoneId + ' img');
             imageElement.src = imageSrc;
 
             // Upload image to ./Home/
@@ -1113,10 +1121,9 @@
 
           reader.readAsDataURL(file);
         });
-      });
-      // Dropzone has been added as a global variable.
-      // const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
-    </script>
+      }
 
+    </script>
+   
   </body>
 </html>
